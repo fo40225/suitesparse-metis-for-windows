@@ -200,7 +200,7 @@ int TEMPLATE2 (CHOLMOD (gpu_init))
  * CPU-eligible descendants will overlap with the last (largest)
  * CHOLMOD_HOST_SUPERNODE_BUFFERS GPU-eligible descendants.
  */
-
+typedef int(*__compar_fn_t)(const void *, const void *);
 void TEMPLATE2 (CHOLMOD (gpu_reorder_descendants))
 (
     cholmod_common *Common,

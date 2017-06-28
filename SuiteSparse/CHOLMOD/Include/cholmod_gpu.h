@@ -45,8 +45,8 @@ typedef struct cholmod_gpu_pointers
     double *d_Lx [CHOLMOD_DEVICE_STREAMS] ;
     double *d_C ;
     double *d_A [CHOLMOD_DEVICE_STREAMS] ;
-    void   *d_Ls ;
-    void   *d_Map ;
+	unsigned char   *d_Ls ;
+	unsigned char   *d_Map ;
     void   *d_RelativeMap ;
 
 } cholmod_gpu_pointers ;
